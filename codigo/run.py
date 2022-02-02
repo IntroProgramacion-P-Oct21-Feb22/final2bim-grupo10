@@ -105,10 +105,10 @@ def obtenerMensaje(numeroCuentas: int):
     return mensaje
 
 def main():
-    continuar = True
+    bandera = True
     datosCuentasCreadas = []
-    while continuar:
-        opcion = 0
+    while bandera:
+        opcion= 0
         print("\tEscoja una opción")
         print("1. Crear perfil de Facebook")
         print("2. Crear perfil de Twitter")
@@ -142,9 +142,8 @@ def main():
         elif opcion==8:
             #print(datosCuentasCreadas)
             #print(len(datosCuentasCreadas))
-            print(obtenerMensaje(len(datosCuentasCreadas)))
-            continuar=False
+            bandera=False
         else:
             print("\nIngrese una opción válida")
-
+    print(obtenerMensaje(len(datosCuentasCreadas)))
 main()
