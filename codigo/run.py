@@ -26,8 +26,6 @@ def crearTwitter(datosCuentasCreadas: list):
     
     resumenTwitter = f"Red: {redSocial}\nNombre de usuario: {nombreUsuario}\nNombres: {nombres}\nApellidos: {apellidos}\nEdad: {edad}\nCiudad: {ciudad}\nPaís: {pais}\nIdioma: {idioma}\nCorreo: {correoElectronico}"
     datosCuentasCreadas.append(resumenTwitter)
-    print(resumenTwitter)
-
 
 def crearWhastapp():
 
@@ -54,7 +52,6 @@ def crearTelegram(datosCuentasCreadas: list):
   
     resumenTelegram = f"Red: {redSocial}\nNombre de usuario: {nombreUsuario}\nNúmero teléfono: {numeroTelefono}\nCiudad: {ciudad}\nPaís: {pais}\nÁrea Interés: {areaInteres}"
     datosCuentasCreadas.append(resumenTelegram)
-    print(resumenTelegram)
 
 def crearSignal():
 
@@ -80,8 +77,6 @@ def crearInstagram(datosCuentasCreadas: list):
    
     resumenInstagram = f"Red: {redSocial}\nNombre de usuario: {nombreUsuario}\nCiudad: {ciudad}\nEdad: {edad}\nCorreo electrónico: {correoElectronico}"
     datosCuentasCreadas.append(resumenInstagram)
-    print(resumenInstagram)
-
 
 def crearFlickr():
 
@@ -121,8 +116,7 @@ def main():
         opcion = int(input("Opción: "))
 
         if opcion==1:
-            cuentaFacebook = crearFacebook()
-            print(cuentaFacebook)            
+            cuentaFacebook = crearFacebook()          
             datosCuentasCreadas.append(cuentaFacebook)
         elif opcion==2:
             crearTwitter(datosCuentasCreadas)            
@@ -140,8 +134,6 @@ def main():
             cuentaFlickr = crearFlickr()
             datosCuentasCreadas.append(cuentaFlickr)
         elif opcion==8:
-            #print(datosCuentasCreadas)
-            #print(len(datosCuentasCreadas))
             bandera=False
         else:
             print("\nIngrese una opción válida")
